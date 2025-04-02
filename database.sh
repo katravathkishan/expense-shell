@@ -36,10 +36,10 @@ dnf install mysql -y &>>LOG_FILE_NAME
 VALIDATE $? "installing  MySQL"
 
 systemctl enable mysqld &>>LOG_FILE_NAME
-VALIDATE $? "enabling the mysql"
+VALIDATE $? "enabling the MySQL"
 
 systemctl start mysqld &>>LOG_FILE_NAME
-VALIDATE $? "starting the mysql"
+VALIDATE $? "starting the MySQL"
 
 mysql_secure_installation --set-root-pass ExpenseApp@1
-VALIDATE $? "settingup root password"
+VALIDATE $? "Settingup Root Password"
